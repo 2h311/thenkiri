@@ -1,0 +1,38 @@
+{
+  "mainLinks": {
+    "Home": "/",
+    "Chinese Drama": "https://dramakey.com/",
+    "K-Drama": "/korean-drama-menu/",
+    "TV Series": "/tv-series-menu/",
+    "How to download": "/how-to-download"
+  },
+  "Movies": {
+    "International": "/category/international/",
+    "Asian Movies": "/category/asian-movies/"
+  },
+  "Asian Movies": {
+    "Bollywood": "/category/asian-movies/download-bollywood-movies/",
+    "Korean Movies": "/category/asian-movies/download-korean-movies/",
+    "Philippine Movies": "/category/asian-movies/download-philippine-movies/"
+  },
+  "Genre": {
+    "Action": "/action/",
+    "Adventure": "/adventure/",
+    "Animation": "/animation/",
+    "Biography": "/biography/",
+    "Comedy": "/comedy/",
+    "Crime": "/crime/",
+    "Drama": "/drama/",
+    "Documentary": "/documentary/",
+    "Fantasy": "/fantasy/",
+    "Family": "/family/",
+    "Horror": "/horror/",
+    "Music": "/music/",
+    "Mystery": "/mystery/",
+    "Romance": "/romance/",
+    "Sci Fi": "/sci-fi/",
+    "Sports": "/sport/",
+    "Thriller": "/thriller/",
+    "War": "/war/"
+  }
+}
