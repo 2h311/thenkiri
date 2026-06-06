@@ -6,7 +6,7 @@ $movie = [
   "imagesrc" => "./wp-content/Jae-seoks-BB-Rules-2026-Reality-Korean-200x300.webp"
 ];
 
-require_once "./components/movie-card.php";
+require_once "./components/wp-movie-card.php";
 
 ob_start();
 ?>
@@ -28,5 +28,5 @@ ob_start();
 <?php
 $content = ob_get_clean();
 
-require_once __DIR__ . '/layout.php';
+require_once __DIR__ . '/wp-layout.php';
 ?>

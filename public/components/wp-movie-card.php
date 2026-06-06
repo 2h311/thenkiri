@@ -30,6 +30,8 @@ function renderMovieCardContainer(array $movie): string
     $cardsHTML .= renderMovieCard($movie['link'], $movie['imagesrc'], $movie['title'], $movie['slug']);
   }
 
+  // set if container has a load more button
+
   return "
     <div class='flex flex-col space-y-8.5'>
       <h1 class='font-semibold text-xl'>New Dramas Upload</h1>
