@@ -14,7 +14,7 @@ $asianMovies = $data["Asian Movies"];
 
 ?>
 
-<nav class="flex justify-center items-center text-sm font-light w-full py-4 border-b border-brand-grey mt-15">
+<nav class="flex justify-center items-center text-sm font-light w-full py-8 border-b border-brand-grey mt-15">
   <div class="w-9/11 flex justify-between items-center">
 
     <div class="w-fit">
@@ -43,7 +43,7 @@ $asianMovies = $data["Asian Movies"];
         <div class="group-hover/level1:text-brand-darkblue flex items-center transition-colors duration-200">
           <span>Movies</span>
           <span class="scale-75">
-            <?php readfile(__DIR__ . "/../assets/svgs/chevron-down.svg"); ?>
+            <?php readfile(__DIR__ . "/../assets/imgs/svgs/chevron-down.svg"); ?>
           </span>
         </div>
 
@@ -58,7 +58,7 @@ $asianMovies = $data["Asian Movies"];
 
             <a class="block w-full" href="<?php echo htmlspecialchars($movies['Asian Movies']); ?>">Asian Movies</a>
             <span class="scale-75">
-              <?php readfile(__DIR__ . "/../assets/svgs/chevron-right.svg"); ?>
+              <?php readfile(__DIR__ . "/../assets/imgs/svgs/chevron-right.svg"); ?>
             </span>
 
             <ul class="dropdown-animate absolute top-0 left-full shadow-md bg-white w-52 border-t-3 border-t-brand-darkblue z-100 flex flex-col
@@ -73,11 +73,11 @@ $asianMovies = $data["Asian Movies"];
         </ul>
       </li>
 
-      <li class="group cursor-pointer relative">
+      <li class="group cursor-pointer relative z-100">
         <div class="group-hover:text-brand-darkblue flex items-center transition-colors duration-200">
           <span class="">Genres</span>
           <span class="scale-75">
-            <?php readfile(__DIR__ . "/../assets/svgs/chevron-down.svg"); ?>
+            <?php readfile(__DIR__ . "/../assets/imgs/svgs/chevron-down.svg"); ?>
           </span>
         </div>
 
