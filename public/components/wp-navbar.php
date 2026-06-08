@@ -93,7 +93,7 @@ $asianMovies = $data["Asian Movies"];
       </li>
 
       <li class="hover:text-brand-darkblue cursor-pointer transition-colors duration-200">
-        <a class="w-full block" href="<//?php echo htmlspecialchars($mainLinks['How to download']); ?>">How to download</a>
+        <a class="w-full block" href="<?php echo htmlspecialchars($mainLinks['How to download']); ?>">How to download</a>
       </li>
 
       <li class="scale-75">

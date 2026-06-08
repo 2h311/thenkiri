@@ -10,7 +10,7 @@ function renderMovieCard(string $movieLink, string $movieImageSource, string $mo
   return "
     <div class='text-xs color-brand-grey border border-brand-grey relative w-full flex flex-col'>
       <div class='relative group'>
-        <img class='w-full aspect-[2/3] object-cover' src={$safeMovieImageSource} alt={$safeMovieSlug} />
+        <img class='w-full aspect-2/3 object-cover' src={$safeMovieImageSource} alt={$safeMovieSlug} />
         <a href={$safeMovieLink} class='dropdown-animate group-hover:visible group-hover:opacity-100 block absolute top-0 left-0 bg-brand-dark/70 w-full h-full flex items-center justify-center'>
           <span class='text-white font-bold'>-></span>
         </a>

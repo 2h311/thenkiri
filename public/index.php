@@ -1,32 +1,22 @@
 <?php
-$movie = [
-  "title" => "Jae-seok's B&B Rules! S01 (Episode 10 Added) | TV Series",
-  "slug" => "Jae-seoks-BB-Rules-2026-Reality-Korean",
-  "link" => "/hello",
-  "imagesrc" => "./wp-content/Jae-seoks-BB-Rules-2026-Reality-Korean-200x300.webp"
+
+$requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+$route = trim($requestUri, "/");
+
+$routes = [
+  "" => "views/wp-index.php",
+  "movies" => "views/wp-movies-list.php",
+  "how-to-download" => "views/wp-download-guide.php"
 ];
 
-require_once "./components/wp-movie-card.php";
+if (array_key_exists($route, $routes)) {
+  require_once __DIR__ . '/' . $routes[$route];
+} else {
+  http_response_code(404);
+  $pageTitle = "404 - Page Not Found";
 
-ob_start();
-?>
-
-<section class="w-full h-fit min-h-fit flex  justify-center">
-  <div class="w-9/11 my-14 flex flex-col space-y-26">
-    <div class="flex flex-col space-y-5 text-sm">
-      <p class="font-semibold text-brand-dark">Search for what to download here</p>
-      <input type="text" class="border border-brand-grey px-2.5 py-2 outline-none" name="" id="" placeholder="Search Here">
-    </div>
-
-    <?php echo renderMovieCardContainer($movie); ?>
-    <?php echo renderMovieCardContainer($movie); ?>
-    <?php echo renderMovieCardContainer($movie); ?>
-
-  </div>
-</section>
-
-<?php
-$content = ob_get_clean();
-
-require_once __DIR__ . '/wp-layout.php';
-?>
+  ob_start();
+  echo "<div class='text-center py-20'><h1 class='text-4xl font-bold'>404</h1><p>Page Not Found</p></div>";
+  $content = ob_get_clean();
+  require_once __DIR__ . "/components/wp-layout.php";
+}
